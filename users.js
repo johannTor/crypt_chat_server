@@ -6,8 +6,7 @@ const users = [];
 function addUser({id, name, room}) {
   // Room name Johns room would be johnsroom
 
-  name = name.trim().toLowerCase();
-  room = room.trim().toLowerCase();
+  name = name.trim();
 
   // A new user is trying to sign up in the same room with a same user name
   const existingUser = users.find((user) => user.room === room && user.name === name)
